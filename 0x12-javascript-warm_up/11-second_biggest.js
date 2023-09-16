@@ -1,9 +1,8 @@
 #!/usr/bin/node
-// searches the second biggest integer in the list of arguments.
-
-if (process.argv.length <= 3) {
+// Write code to find the second biggest integer in the list of arguments
+const num = process.argv;
+if (num.length <= 3) {
   console.log(0);
 } else {
-  const list = process.argv.sort();
-  console.log(list.reverse()[1]);
+  console.log(num.sort((x, y) => y - x).slice(3)[0]);
 }

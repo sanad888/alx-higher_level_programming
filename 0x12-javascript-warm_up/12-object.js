@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// Update by replacing the value 12 with 89
 const myObject = {
   type: 'object',
   value: 12
